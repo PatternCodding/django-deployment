@@ -102,4 +102,8 @@ CODES INSIDE THE FOLDER:
 1. git init 
 2. copy and paste any of the folder you want to host
 3. git add .
-4. git commit . -m 'first'
+4. status
+4. git commit . -m "commit message"
+5. copy this HTTPS from the GitHub and paste it:
+git remote add origin https://github.com/PatternCodding/django-deployment.git
+6.  push -u origin main
