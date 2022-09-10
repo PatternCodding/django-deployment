@@ -1,0 +1,105 @@
+THIS IS THE OUTLINE OF THIS LEVEL
+1. After creating our project and app
+2. we let django to recognize it from the settings
+3. we then install the following authentications:
+a.   pip install bcrypt
+b.   pip install django[argon2]
+4. in same settings we set up our PASSWORD_HASHERS
+5. we then add max_lenght in our AUTH_PASSWORD_VALIDATORS
+6. we then create our template, static and media folders,
+7. we add our templates in our TEMPLATES list
+8. we then create our static DIRECTORIES and that of our MEDIA
+THE MEDIA IS WHERE ALL USERS IMAGES, VIDEOS ETC WILL BE STORED.
+
+SECTION TWO OUTLINES:
+1. Users Model
+2. media Directory
+1. Handling Images
+1. Users Form
+
+1. 1. Users Model
+after the codes we then create a folder inside the media called profile_pics
+
+INSTALLING PILLOW:
+for us to work with profile images we must install pillow using
+pip install pillow
+
+CREATING A FORM 
+ after the next is:
+
+ REGISTER THE MODEL WE CREATED IN OUR ADMIN FILE
+
+before we migrate we must add below in our settings.py file:
+DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
+
+ after that we migrate and makemigrations
+
+
+SECTION 3
+1. Inside our templates we creata a folder called authapp
+2. inside there we creata a file caled base.html 
+3. index.html
+4. registration.html and login.html
+
+after setting up the above html pages we then settup the url.py file
+
+4. let's create and settup our own urls.py
+5. followed by our views.py functions
+
+SECTION 4
+REGISTRATION LECTURE
+
+1. creating our views for registration validations
+2. testing our codes
+3. creating our superusers
+
+SECTION 5
+LOGIN AND LOGOUT SECTION
+
+1. scrolling down in our settings.py and settup our logins
+2. setting up the html page
+3. time to settup the views.py for the login or logout depending on the status of the User
+
+
+SECTION 6
+GIT 
+GITHUB
+VERSION CONTROL
+SITE DEPLOYMENT
+
+GIT AND GITHUB:
+many beginers thought they're thesame, NO they're not.
+=>Git is a version contrl system that helps keep track of changes in your code.
+=>GitHub is a company and website that helps manage git and hosts your files on their site.
+they offer tools for collaoration.
+=> Git is open source totally free
+
+VERSION CONTROL
+=>The main idea for us that you can have one repository with various historic checkpoints that you can
+always refer back to, with hsitory of any changes-version control.
+
+=>GitHub is one of the most popular code hosting sites on the web.
+=>It allows you to easily use git for version contrl and keep hosted copies of your code on the web.
+
+
+STEPS
+1. Download and install git in your computer makig sure you add to PATH
+2. Create an account on GitHub for free, or paid version to hide some documents/files and sign-in
+
+
+DEPLOYMENT OF SITE:
+1. create a repository name
+2. give a descreiption if like
+3. public
+4. add a README file if you like
+5. click oncreate a repository
+6. chose CLI option
+7. open vs code and create a new folder that will contain a subdirectory
+of our actual git repository (my_base) and cd inside it
+
+
+CODES INSIDE THE FOLDER:
+1. git init 
+2. copy and paste any of the folder you want to host
+3. git add .
+4. git commit . -m 'first'
